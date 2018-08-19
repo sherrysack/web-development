@@ -187,7 +187,7 @@ var a3 = a.map(s => s.length);
 
 //both a2 and a3 will be equal to [31, 30]
 ```
-
+## Selecting Nodes With Different Ways
 ### Targeting Nodes with Selectors
 
 When working with the DOM, you use “selectors” to target the nodes you want to work with. You can use a combination of CSS-style selectors and relationship properties to target the nodes you want. Let’s start with CSS-style selectors. In the above example, you could use the following selectors to refer to `<div class="display"></div>`:
@@ -197,3 +197,4 @@ When working with the DOM, you use “selectors” to target the nodes you want 
 - container > .display
 - div#container > div.display
 
+https://www.theodinproject.com/courses/web-development-101/lessons/dom-manipulation?ref=lnav
