@@ -198,3 +198,21 @@ When working with the DOM, you use “selectors” to target the nodes you want 
 - div#container > div.display
 
 https://www.theodinproject.com/courses/web-development-101/lessons/dom-manipulation?ref=lnav
+
+
+
+
+#### Adding inline style
+
+```
+div.style.color = 'blue';                                      
+// adds the indicated style rule
+
+div.style.cssText = 'color: blue; background: white';          
+// adds several style rules
+
+div.setAttribute('style', 'color: blue; background: white');    
+// adds several style rules
+
+```
+
