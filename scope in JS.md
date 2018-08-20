@@ -66,7 +66,7 @@ The `this` value here doesn’t refer to our elements, we’re not invoking anyt
 
 The `.call()` and `.apply()` methods are really sweet, they allows you to pass in a scope to a function, which binds the correct `this`value. Let’s manipulate the above function to make it so that our `this` value is each element in the array:
 
-```
+```js
 var links = document.querySelectorAll('nav li');
 for (var i = 0; i < links.length; i++) {
   (function () {
