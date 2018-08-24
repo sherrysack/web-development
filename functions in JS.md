@@ -79,4 +79,5 @@ const peoplelist = people.sort((a, b) => {
     return lparts > lnparts ? 1: -1;
     });
     
-//
+//8 reduce
+const data = 
