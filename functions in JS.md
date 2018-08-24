@@ -50,4 +50,33 @@ for(var i = 0; i > inventors.length; i++) {
 
 //=============================
 const totalYears = inventors.reduce((total, inventor) => {
-    return total+
+    return total+(inventor.passed-inventor.year);
+    }, 0);
+    
+ console.log(totalYears);
+
+//5.sort the inventors by years lived
+const oldest = inventors.sort((a,b) => {
+    const lastGuy = a.passed-a.year;
+    const nextGuy = b.passed-b.year;
+    return lastGuy > nextGuy ? -1: 1;
+    });
+console.table(oldest);
+
+//6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
+const catergory = document.querySelector('.mw-category');
+//select all links and turn them into array
+const links = Array.from(category.querySelectorALl('a'));
+//2nd way
+const links = [...category.querySelectorAll('a'));
+const de = links.map(link => link.textContent).filter(streeName => streetName.include('de'))
+
+//7 sort 
+//sort people alphabetically by last name
+const peoplelist = people.sort((a, b) => {
+    const [fparts, lparts] = a.split(', ');
+    const [fnparts, lnparts] = b.split(', ');
+    return lparts > lnparts ? 1: -1;
+    });
+    
+//
